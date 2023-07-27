@@ -1,0 +1,9 @@
+{
+  "nav_links": [
+    { "title": "Home", "href": "/" },
+    { "title": "About", "href": "/" },
+    { "title": "Projects", "href": "/" },
+    { "title": "Resume", "href": "/" },
+    { "title": "Contact", "href": "/" }
+  ]
+}
