@@ -83,10 +83,10 @@
   "skills": [
     { "title": "HTML", "percent": 90 },
     { "title": "CSS", "percent": 90 },
-    { "title": "Tailwind", "percent": 80 },
+    { "title": "Tailwind", "percent": 90 },
     { "title": "SCSS", "percent": 80 },
     { "title": "JS", "percent": 70 },
-    { "title": "React", "percent": 80 },
+    { "title": "React", "percent": 90 },
     { "title": "Redux", "percent": 60 },
     { "title": "RTK Query", "percent": 70 },
     { "title": "Type Scrypt", "percent": 80 },

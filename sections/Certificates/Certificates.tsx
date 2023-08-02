@@ -5,7 +5,7 @@ import { data } from '@/assets';
 
 const Certificates = () => {
   return (
-    <section id="certificates" className="py-20">
+    <section id="certificates" className="pt-20">
       <div className="container">
         <h2 className="mb-10 text-2xl font-bold text-white">Certificates</h2>
         <ul className="flex gap-4">

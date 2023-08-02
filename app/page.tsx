@@ -1,4 +1,5 @@
 import Certificates from '@/sections/Certificates/Certificates';
+import Feedback from '@/sections/Feedback/Feedback';
 import Hero from '@/sections/Hero/Hero';
 import Projects from '@/sections/Projects/Projects';
 import Skills from '@/sections/Skills/Skills';
@@ -10,6 +11,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Certificates />
+      <Feedback />
     </main>
   );
 }

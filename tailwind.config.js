@@ -39,6 +39,7 @@ module.exports = {
         '2px -2px 10px 0px rgba(92, 46, 145, 0.05), 4px 4px 10px 0px rgba(92, 46, 145, 0.08)',
       secondary:
         '2px -2px 10px 0px rgba(255, 231, 0, 1), 4px 4px 10px 0px rgba(255, 231, 0, 1)',
+      error: '2px -2px 10px 0px #d92d46, 4px 4px 10px 0px #d92d46',
     },
     extend: {
       backgroundImage: {
@@ -52,6 +53,7 @@ module.exports = {
         accent: '#ffe700',
         text: '#d0d5db',
         card: '#32363c',
+        error: '#d92d46',
       },
     },
   },
