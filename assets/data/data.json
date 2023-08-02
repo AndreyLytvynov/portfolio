@@ -1,0 +1,108 @@
+{
+  "my_photo": {
+    "alt": "photo Andrii Lytvynov",
+    "src": "/images/my-photo.jpg"
+  },
+  "about_me": "I have deep knowledge in web development. I work hard and improve my professional skills every day. I am a quick learner, responsible and ready to perform complex tasks. My love for coding keeps me moving  towards my dreams every day.",
+  "nav_links": [
+    { "title": "Home", "href": "/", "to": "home" },
+    { "title": "Skills", "href": "/", "to": "skills" },
+    { "title": "Projects", "href": "/", "to": "projects" },
+    { "title": "Certificates", "href": "/", "to": "certificates" },
+    { "title": "Reviews", "href": "/", "to": "reviews" }
+  ],
+  "projects": [
+    {
+      "title": "GOITEENS",
+      "description": "Commercial project. Website for testing individuals interested inparticipating in an internship program at SoftRyzen Company.",
+      "img": {
+        "alt": "screen web site",
+        "src": "/images/projects/goiteens.png"
+      },
+      "git": null,
+      "site": "https://goiteens.com/course/frontend-junior/",
+      "technologies": ["HTML", "Nunjucks", "CSS", "Tailwind", "JS"]
+    },
+    {
+      "title": "TESTING MODULE",
+      "description": "Commercial project. Website for testing individuals interested inparticipating in an internship program at SoftRyzen Company.",
+      "img": {
+        "alt": "screen web site",
+        "src": "/images/projects/testing-module.png"
+      },
+      "git": null,
+      "site": "https://testing-module-internship.vercel.app/",
+      "technologies": ["React", "TS", "CSS", "Redux", "Rest API"]
+    },
+    {
+      "title": "PODOROZH ZHYTTIA",
+      "description": "Commercial project. Donations and Psychological Support Website.",
+      "img": {
+        "alt": "screen web site",
+        "src": "/images/projects/podorozh-zhyttia.png"
+      },
+      "git": "https://github.com/SoftRyzen-internship/podorozh-zhyttia",
+      "site": "https://podorozh-zhyttia.vercel.app/",
+      "technologies": [
+        "Next.JS",
+        "TS",
+        "Tailwind",
+        "React Hook Form",
+        "DatoCMS"
+      ]
+    },
+    {
+      "title": "PETS",
+      "description": "Pet project. The app for searching and selling pets.",
+      "img": {
+        "alt": "screen web site",
+        "src": "/images/projects/pets.png"
+      },
+      "git": "https://github.com/AndreyLytvynov/pets_project_client",
+      "site": "https://pets.tryapi.site",
+      "technologies": [
+        "React",
+        "Redux",
+        "React Hook Form",
+        "Express",
+        "Mongo DB"
+      ]
+    },
+    {
+      "title": "Trello",
+      "description": "Pet project. A task management tool that allows you to create to-do lists and track their progress in real-time.",
+      "img": {
+        "alt": "screen web site",
+        "src": "/images/projects/trello.png"
+      },
+      "git": "https://github.com/AndreyLytvynov/mytrello",
+      "site": "https://andreylytvynov.github.io/mytrello/",
+      "technologies": ["React", "Redux", "TS", "ChakraUI", "Drag-and-drop"]
+    }
+  ],
+  "skills": [
+    { "title": "HTML", "percent": 90 },
+    { "title": "CSS", "percent": 90 },
+    { "title": "Tailwind", "percent": 80 },
+    { "title": "SCSS", "percent": 80 },
+    { "title": "JS", "percent": 70 },
+    { "title": "React", "percent": 80 },
+    { "title": "Redux", "percent": 60 },
+    { "title": "RTK Query", "percent": 70 },
+    { "title": "Type Scrypt", "percent": 80 },
+    { "title": "Next", "percent": 80 },
+    { "title": "Chakra ui", "percent": 70 },
+    { "title": "Dato CMS", "percent": 70 },
+    { "title": "Node JS", "percent": 40 },
+    { "title": "Mongo DB", "percent": 40 },
+    { "title": "Express", "percent": 40 },
+    { "title": "React Native", "percent": 30 }
+  ],
+  "certificates": [
+    {
+      "src": "/images/certificates/softryzen.png",
+      "alt": "certificate softryzen"
+    },
+    { "src": "/images/certificates/goit.png", "alt": "certificate goit" }
+  ]
+}

@@ -34,6 +34,12 @@ module.exports = {
       '4xl': '40px',
       '5xl': '52px',
     },
+    boxShadow: {
+      primary:
+        '2px -2px 10px 0px rgba(92, 46, 145, 0.05), 4px 4px 10px 0px rgba(92, 46, 145, 0.08)',
+      secondary:
+        '2px -2px 10px 0px rgba(255, 231, 0, 1), 4px 4px 10px 0px rgba(255, 231, 0, 1)',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -43,7 +49,9 @@ module.exports = {
       colors: {
         body: '#212428',
         primary: '#8e95a0',
-        accent: '#ff014f',
+        accent: '#ffe700',
+        text: '#d0d5db',
+        card: '#32363c',
       },
     },
   },

@@ -1,8 +1,8 @@
-import Header from '@/components/Header/Header';
+import Header from '@/sections/Header/Header';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
-import Footer from '@/components/Footer/Footer';
+import Footer from '@/sections/Footer/Footer';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} flex h-full min-h-screen flex-col bg-body text-primary`}
+        className={`${poppins.className} flex h-full min-h-screen flex-col bg-body text-text`}
       >
         <Header />
         {children}
