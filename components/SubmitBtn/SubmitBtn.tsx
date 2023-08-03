@@ -9,7 +9,7 @@ const SubmitBtn: FC<SubmitButtonProps> = ({ children, className }) => {
   return (
     <button
       type="submit"
-      className={`mx-auto flex w-1/3 items-center justify-center rounded border border-white py-4 text-sm hover:border-body hover:bg-inherit hover:text-gray-100 hover:shadow-secondary ${className}`}
+      className={`mx-auto flex w-1/3 items-center justify-center rounded border border-white py-4 text-sm hover:border-body hover:bg-inherit hover:text-gray-100 hover:shadow-secondary focus:border-body focus:shadow-secondary ${className}`}
     >
       {children}
     </button>

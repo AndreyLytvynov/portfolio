@@ -3,6 +3,7 @@ import Feedback from '@/sections/Feedback/Feedback';
 import Hero from '@/sections/Hero/Hero';
 import Projects from '@/sections/Projects/Projects';
 import Skills from '@/sections/Skills/Skills';
+import Testimonials from '@/sections/Testimonials/Testimonials';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Projects />
       <Certificates />
       <Feedback />
+      <Testimonials />
     </main>
   );
 }
