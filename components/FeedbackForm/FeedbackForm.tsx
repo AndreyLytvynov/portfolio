@@ -1,21 +1,17 @@
 'use client';
 
-import { FC, useState } from 'react';
-// import { useTranslation } from 'next-i18next';
+import { FC } from 'react';
+import { useRouter } from 'next/navigation';
+
 import { useForm, SubmitHandler } from 'react-hook-form';
 import FeedbackFormInput from '@/components/FeedbackFormInput/FeedbackFormInput';
-import SubmitBtn from '../SubmitBtn/SubmitBtn';
-import { TypeFormValues } from '@/types/types';
-import FeedbackFormTextarea from '../FeedbackTextarea/FeedbackTextarea';
-// import toast, { Toaster } from 'react-hot-toast';
+import FeedbackFormTextarea from '@/components/FeedbackTextarea/FeedbackTextarea';
+import SubmitBtn from '@/components/SubmitBtn/SubmitBtn';
 
-// import FeedbackFormTextarea from '@/components/FeedbackTextarea';
-// import Loader from '@/components/Loader';
-// import NotifyModal from '@/components/NotifyModal';
+import { TypeFormValues } from '@/types/types';
+import { addPost } from '@/service/service';
 
 const FeedbackForm: FC = () => {
-  const [isSending, setIsSending] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const {
     register,
     handleSubmit,
@@ -23,17 +19,21 @@ const FeedbackForm: FC = () => {
     reset,
   } = useForm<TypeFormValues>();
 
+  const router = useRouter();
+
   const onSubmit: SubmitHandler<TypeFormValues> = async data => {
-    console.log('data', data);
+    await addPost(data);
+    reset();
+    router.refresh();
   };
 
   return (
     <form
-      className="mx-auto flex w-[700px] flex-col gap-8 rounded border p-8"
+      className="mx-auto flex w-full flex-col gap-8 rounded border p-8 desktop:w-[700px]"
       onSubmit={handleSubmit(onSubmit)}
       noValidate
     >
-      <h2 className="text-xl">Please leave your comment. </h2>
+      <h2 className="text-xl">Please leave your comment</h2>
       <FeedbackFormInput
         label={'Name *'}
         id="name"
@@ -65,13 +65,18 @@ const FeedbackForm: FC = () => {
         label={'Company'}
         id="company"
         placeholder={'no company'}
-        register={register('company')}
+        register={register('company', {
+          maxLength: {
+            value: 70,
+            message: `max 70 symbol`,
+          },
+        })}
       />
       <FeedbackFormTextarea
-        label={'Commentary *'}
-        id="commentary"
+        label={'text *'}
+        id="text"
         placeholder={'your commentary'}
-        register={register('commentary', {
+        register={register('text', {
           required: `*is required`,
           maxLength: {
             value: 3000,
@@ -86,13 +91,10 @@ const FeedbackForm: FC = () => {
             },
           },
         })}
-        error={errors?.commentary?.message}
+        error={errors?.text?.message}
         rows={6}
       />
       <SubmitBtn className={'mt-12'}>Send</SubmitBtn>
-
-      {/* <Toaster position="top-right" reverseOrder={false} />
-      {isModalOpen && <NotifyModal setIsModalOpen={setIsModalOpen} />} */}
     </form>
   );
 };

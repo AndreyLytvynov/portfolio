@@ -23,17 +23,17 @@ const Hero: FC = () => {
 
   return (
     <section>
-      <div className="container flex  justify-between gap-10">
+      <div className="container flex flex-col-reverse justify-between gap-5 desktop:flex-row desktop:gap-10">
         <div className="flex flex-col pt-10">
-          <h1 className="text-6xl mb-4 text-5xl font-bold text-white">
+          <h1 className="mb-4 text-lg font-bold text-white tablet:text-5xl">
             Hi, I&apos;m{' '}
             <span className="capitalize text-accent"> Andrii Lytvynov</span>
           </h1>
-          <p className="mb-10 text-2xl font-bold text-white">
+          <p className="mb-4 text-lg font-bold text-white tablet:mb-10 tablet:text-2xl">
             a <span>{text}</span>
             <Cursor cursorStyle="|" cursorColor="#ede734" />
           </p>
-          <p className="mb-auto text-lg leading-10 tracking-wide">
+          <p className="leading-2 mb-auto text-xs tracking-wide tablet:text-base  desktop:text-lg desktop:leading-10">
             {data.about_me}
           </p>
           <Media />
@@ -43,7 +43,7 @@ const Hero: FC = () => {
           alt={data.my_photo.alt}
           width={500}
           height={500}
-          className="rounded desktop:w-[500px]"
+          className="mx-auto w-full rounded desktop:w-[500px]"
         />
       </div>
     </section>

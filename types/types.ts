@@ -2,7 +2,6 @@ import { UseFormRegisterReturn } from 'react-hook-form';
 
 export type TypeNavLink = {
   title: string;
-  href: string;
   to: string;
 };
 
@@ -21,7 +20,7 @@ export type TypeProjectCard = {
 export type TypeFormValues = {
   name: string;
   company: string;
-  commentary: string;
+  text: string;
 };
 
 export type InputFieldProps = {
@@ -31,4 +30,23 @@ export type InputFieldProps = {
   error?: string;
   register: UseFormRegisterReturn;
   rows?: number | undefined;
+};
+
+export type TypeRequestPost = {
+  text: string;
+  name: string;
+  company: string;
+};
+
+export type TypePost = {
+  name: string;
+  company: string;
+  text: string;
+  date: string;
+  _id: string;
+};
+
+export type TypeResponsePost = {
+  status: string;
+  data: TypePost[];
 };

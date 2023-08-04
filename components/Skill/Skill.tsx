@@ -9,7 +9,7 @@ type SkillProps = {
 
 const Skill: FC<SkillProps> = ({ title, percent }) => {
   return (
-    <li key={title} className="w-[580px] overflow-hidden">
+    <li key={title} className="w-full overflow-hidden desktop:w-[580px]">
       <p className="text-sm uppercase text-accent">{title}</p>
       <div className="inline-flex h-2 w-full rounded-md bg-text">
         <motion.span

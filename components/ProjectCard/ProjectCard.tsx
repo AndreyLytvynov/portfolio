@@ -25,7 +25,7 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
   technologies,
 }) => {
   return (
-    <div className="min-h-[600px] w-[378px] overflow-hidden rounded-lg bg-card p-4 duration-300 hover:scale-105 hover:border-accent hover:shadow-secondary">
+    <div className="min-h-[600px] w-full overflow-hidden  rounded-lg bg-card p-4 duration-300 hover:scale-105 hover:border-accent hover:shadow-secondary tablet:w-[344px] desktop:w-[378px]">
       <div className="w-full rounded-lg">
         <Image
           className="h-[300px] w-full rounded-lg object-cover"

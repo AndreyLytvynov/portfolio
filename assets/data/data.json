@@ -5,11 +5,11 @@
   },
   "about_me": "I have deep knowledge in web development. I work hard and improve my professional skills every day. I am a quick learner, responsible and ready to perform complex tasks. My love for coding keeps me moving  towards my dreams every day.",
   "nav_links": [
-    { "title": "Home", "href": "/", "to": "home" },
-    { "title": "Skills", "href": "/", "to": "skills" },
-    { "title": "Projects", "href": "/", "to": "projects" },
-    { "title": "Certificates", "href": "/", "to": "certificates" },
-    { "title": "Reviews", "href": "/", "to": "reviews" }
+    { "title": "Home", "to": "home" },
+    { "title": "Skills", "to": "skills" },
+    { "title": "Projects", "to": "projects" },
+    { "title": "Certificates", "to": "certificates" },
+    { "title": "Comments", "to": "comments" }
   ],
   "projects": [
     {

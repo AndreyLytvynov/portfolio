@@ -5,7 +5,7 @@ import Skill from '@/components/Skill/Skill';
 
 const Skills: FC = () => {
   return (
-    <section className="pt-20" id="skills">
+    <section className="pt-10 tablet:pt-20" id="skills">
       <div className="container">
         <h2 className="mb-10 text-2xl font-bold text-white">
           Professional Skills

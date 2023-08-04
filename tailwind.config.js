@@ -14,6 +14,7 @@ module.exports = {
       desktop: '1280px',
       onlyMobile: { max: '767.8px' },
       onlyTablet: { min: '768px', max: '1279.8px' },
+      exceptDesktop: { max: '1279.8px' },
     },
     container: {
       center: true,

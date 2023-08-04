@@ -12,7 +12,10 @@ const NavBar: FC = () => {
     <nav>
       <ul className="flex justify-end gap-10">
         {data.nav_links.map((link: TypeNavLink) => (
-          <li key={link.title} className={`text-lg hover:text-white`}>
+          <li
+            key={link.title}
+            className={`text-base hover:text-white desktop:text-lg`}
+          >
             <Link
               to={link.to}
               smooth={true}
@@ -22,8 +25,7 @@ const NavBar: FC = () => {
               offset={-70}
               isDynamic={true}
               spyThrottle={500}
-              className="py-10 duration-300 hover:text-accent"
-              href={'/'}
+              className="py-10 duration-300 hover:cursor-pointer hover:text-accent"
             >
               {link.title}
             </Link>

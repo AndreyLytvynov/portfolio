@@ -9,7 +9,7 @@ import SocialLink from '@/components/Link/Link';
 
 const Media: FC = () => {
   return (
-    <div className="xl:flex-row lgl:gap-0 flex flex-col justify-between gap-6">
+    <div className="xl:flex-row flex flex-col justify-between exceptDesktop:mt-6">
       <h2 className="mb-4 text-base uppercase">contact me</h2>
       <div className="flex gap-6">
         <SocialLink

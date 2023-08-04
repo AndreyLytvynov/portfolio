@@ -3,7 +3,7 @@ import { FC } from 'react';
 
 const Feedback: FC = () => {
   return (
-    <section className="pt-20">
+    <section className="py-10 tablet:py-20">
       <div className="container">
         <FeedbackForm />
       </div>
