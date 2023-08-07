@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Portfolio',
-  description: 'Portfolio',
+  description: 'Portfolio Andrii Lytvynov - JavaScrypt Developer',
   icons: {
     icon: '/favicon.ico',
   },
