@@ -75,7 +75,7 @@ const FeedbackForm: FC = () => {
         })}
       />
       <FeedbackFormTextarea
-        label={'text *'}
+        label={'Commentary *'}
         id="text"
         placeholder={'your commentary'}
         register={register('text', {
