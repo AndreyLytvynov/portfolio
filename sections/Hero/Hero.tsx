@@ -25,7 +25,7 @@ const Hero: FC = () => {
   return (
     <section id="home">
       <div className="container flex flex-col-reverse justify-between gap-5 desktop:flex-row desktop:gap-10">
-        <div className="flex flex-col pt-10">
+        <div className="mt-5 flex flex-col tablet:mt-10">
           <h1 className="mb-4 text-lg font-bold text-white tablet:text-5xl">
             Hi, I&apos;m{' '}
             <span className="capitalize text-accent"> Andrii Lytvynov</span>
