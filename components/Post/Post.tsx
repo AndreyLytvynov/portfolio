@@ -36,7 +36,7 @@ const Post: FC<PostProp> = ({ post }) => {
         <p>{post.company.length !== 0 ? post.company : 'no company'}</p>
       </div>
       <p
-        className="line-clamp-[6] text-justify text-xs"
+        className="line-clamp-[6] text-justify text-[10px] tablet:text-xs"
         style={{ flexGrow: 2 }}
       >
         {post.text}
