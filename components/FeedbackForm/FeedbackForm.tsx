@@ -4,12 +4,14 @@ import { FC } from 'react';
 import { useRouter } from 'next/navigation';
 
 import { useForm, SubmitHandler } from 'react-hook-form';
+
 import FeedbackFormInput from '@/components/FeedbackFormInput/FeedbackFormInput';
 import FeedbackFormTextarea from '@/components/FeedbackTextarea/FeedbackTextarea';
 import SubmitBtn from '@/components/SubmitBtn/SubmitBtn';
 
-import { TypeFormValues } from '@/types/types';
 import { addPost } from '@/service/service';
+
+import { TypeFormValues } from '@/types/types';
 
 const FeedbackForm: FC = () => {
   const {

@@ -1,6 +1,9 @@
-import ProjectsCard from '@/components/ProjectCard/ProjectCard';
 import { FC } from 'react';
+
+import ProjectsCard from '@/components/ProjectCard/ProjectCard';
+
 import { data } from '@/assets';
+
 import { TypeProjectCard } from '@/types/types';
 
 const Projects: FC = () => {

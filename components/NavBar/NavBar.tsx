@@ -7,16 +7,22 @@ import { data } from '@/assets';
 
 import { TypeNavLink } from '@/types/types';
 
-const NavBar: FC = () => {
+type NavBarProp = {
+  className?: string;
+  handleClick?: () => void;
+};
+
+const NavBar: FC<NavBarProp> = ({ className, handleClick }) => {
   return (
     <nav>
-      <ul className="flex justify-end gap-10">
+      <ul className={`flex justify-end gap-10 ${className}`}>
         {data.nav_links.map((link: TypeNavLink) => (
           <li
             key={link.title}
             className={`text-base hover:text-white desktop:text-lg`}
           >
             <Link
+              onClick={handleClick}
               to={link.to}
               smooth={true}
               duration={700}

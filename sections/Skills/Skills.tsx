@@ -1,7 +1,8 @@
 import { FC } from 'react';
 
-import { data } from '@/assets';
 import Skill from '@/components/Skill/Skill';
+
+import { data } from '@/assets';
 
 const Skills: FC = () => {
   return (

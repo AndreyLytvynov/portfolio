@@ -15,3 +15,11 @@ body {
 .swiper-pagination-clickable .swiper-pagination-bullet-active {
   background: #ffe700;
 }
+
+a.active {
+  color: #ffe700;
+}
+
+.blockScroll {
+  overflow: hidden;
+}

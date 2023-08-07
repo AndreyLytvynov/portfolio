@@ -1,0 +1,11 @@
+.footerMedia {
+  margin: 0;
+}
+
+.footerMedia h2 {
+  @apply hidden;
+}
+
+.footerMedia a {
+  @apply h-10 w-10;
+}

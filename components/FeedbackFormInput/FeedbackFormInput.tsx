@@ -1,5 +1,6 @@
-import { InputFieldProps } from '@/types/types';
 import { FC } from 'react';
+
+import { InputFieldProps } from '@/types/types';
 
 const FeedbackFormInput: FC<InputFieldProps> = ({
   label,

@@ -1,9 +1,9 @@
+import { FC } from 'react';
 import Image from 'next/image';
-import React from 'react';
 
 import { data } from '@/assets';
 
-const Certificates = () => {
+const Certificates: FC = () => {
   return (
     <section id="certificates" className="pt-10 desktop:pt-20">
       <div className="container">

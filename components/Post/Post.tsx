@@ -1,11 +1,19 @@
+import { FC, useState } from 'react';
+
+import Modal from '@/components/Modal/Modal';
+
 import { TypePost } from '@/types/types';
-import { FC } from 'react';
 
 type PostProp = {
   post: TypePost;
 };
 
 const Post: FC<PostProp> = ({ post }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div
       key={post._id}
@@ -37,6 +45,7 @@ const Post: FC<PostProp> = ({ post }) => {
         <p className="text-gray-400">{post.date}</p>
         {post.text.length >= 430 && (
           <button
+            onClick={handleClick}
             type="button"
             className={`rounded border border-card p-3 text-accent hover:border-card hover:bg-inherit hover:text-gray-100 hover:shadow-secondary focus:border-card focus:shadow-secondary`}
           >
@@ -44,6 +53,7 @@ const Post: FC<PostProp> = ({ post }) => {
           </button>
         )}
       </div>
+      {isOpen && <Modal setIsOpen={handleClick} post={post} />}
     </div>
   );
 };

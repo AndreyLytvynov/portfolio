@@ -1,5 +1,7 @@
 'use client';
+
 import { FC } from 'react';
+
 import { motion } from 'framer-motion';
 
 type SkillProps = {

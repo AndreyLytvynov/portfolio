@@ -1,15 +1,21 @@
 import { FC } from 'react';
 
+import SocialLink from '@/components/Link/Link';
+
 import { FaLinkedinIn } from 'react-icons/fa';
 import { SiGithub, SiGmail, SiTelegram } from 'react-icons/si';
 
 import s from './Media.module.css';
 
-import SocialLink from '@/components/Link/Link';
+type MediaProps = {
+  className?: string;
+};
 
-const Media: FC = () => {
+const Media: FC<MediaProps> = ({ className }) => {
   return (
-    <div className="xl:flex-row flex flex-col justify-between exceptDesktop:mt-6">
+    <div
+      className={`xl:flex-row flex flex-col justify-between exceptDesktop:mt-6 ${className}`}
+    >
       <h2 className="mb-4 text-base uppercase">contact me</h2>
       <div className="flex gap-6">
         <SocialLink

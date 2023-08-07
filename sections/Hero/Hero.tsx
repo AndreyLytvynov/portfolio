@@ -1,8 +1,9 @@
 'use client';
 import { FC } from 'react';
+import Image from 'next/image';
+
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
-import Image from 'next/image';
 import Media from '@/components/Media/Media';
 
 import { data } from '@/assets';
@@ -22,7 +23,7 @@ const Hero: FC = () => {
   });
 
   return (
-    <section>
+    <section id="home">
       <div className="container flex flex-col-reverse justify-between gap-5 desktop:flex-row desktop:gap-10">
         <div className="flex flex-col pt-10">
           <h1 className="mb-4 text-lg font-bold text-white tablet:text-5xl">

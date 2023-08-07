@@ -7,7 +7,7 @@ import Testimonials from '@/sections/Testimonials/Testimonials';
 
 export default function Home() {
   return (
-    <main className="flex-grow pt-32 desktop:pt-40" id="home">
+    <main className="flex-grow pt-32 desktop:pt-40">
       <Hero />
       <Skills />
       <Projects />

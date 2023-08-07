@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import Post from '../Post/Post';
+import Post from '@/components/Post/Post';
 
 import { TypePost } from '@/types/types';
 

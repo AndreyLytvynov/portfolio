@@ -1,5 +1,6 @@
-import { TypeRequestPost, TypeResponsePost } from '@/types/types';
 import { getCurrentDateFormatted } from '@/utils/getCurrentDate';
+
+import { TypeRequestPost, TypeResponsePost } from '@/types/types';
 
 export async function getPost(): Promise<TypeResponsePost> {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts`, {

@@ -1,5 +1,6 @@
-import FeedbackForm from '@/components/FeedbackForm/FeedbackForm';
 import { FC } from 'react';
+
+import FeedbackForm from '@/components/FeedbackForm/FeedbackForm';
 
 const Feedback: FC = () => {
   return (
