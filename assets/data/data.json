@@ -78,6 +78,17 @@
       "git": "https://github.com/AndreyLytvynov/mytrello",
       "site": "https://andreylytvynov.github.io/mytrello/",
       "technologies": ["React", "Redux", "TS", "ChakraUI", "Drag-and-drop"]
+    },
+    {
+      "title": "Movies",
+      "description": "Pet project. Website for watching movies with a feature of adding to your own collection of favorite movies.",
+      "img": {
+        "alt": "screen web site",
+        "src": "/images/projects/movies.png"
+      },
+      "git": "https://github.com/AndreyLytvynov/movies",
+      "site": "https://movies-one-iota.vercel.app/",
+      "technologies": ["React", "Redux", "ChakraUI", "NodeJS", "MongoDB"]
     }
   ],
   "skills": [
