@@ -13,6 +13,23 @@
   ],
   "projects": [
     {
+      "title": "SNAPGRAM",
+      "description": "Pet project. Snapgram is a site where you can share posts and photos with your friends and other users.",
+      "img": {
+        "alt": "screen web site",
+        "src": "/images/projects/snapgram.png"
+      },
+      "git": "https://github.com/AndreyLytvynov/snapgram",
+      "site": "https://snapgram-teal-eight.vercel.app/",
+      "technologies": [
+        "React",
+        "React-query",
+        "Tailwind",
+        "TypeScrypt",
+        "Appwrite"
+      ]
+    },
+    {
       "title": "GOITEENS",
       "description": "Commercial project. Website for testing individuals interested inparticipating in an internship program at SoftRyzen Company.",
       "img": {
@@ -98,6 +115,7 @@
     { "title": "SCSS", "percent": 80 },
     { "title": "JS", "percent": 70 },
     { "title": "React", "percent": 90 },
+    { "title": "React Query", "percent": 50 },
     { "title": "Redux", "percent": 60 },
     { "title": "RTK Query", "percent": 70 },
     { "title": "Type Scrypt", "percent": 80 },
@@ -107,7 +125,8 @@
     { "title": "Node JS", "percent": 40 },
     { "title": "Mongo DB", "percent": 40 },
     { "title": "Express", "percent": 40 },
-    { "title": "React Native", "percent": 30 }
+    { "title": "React Native", "percent": 30 },
+    { "title": "Appwrite", "percent": 30 }
   ],
   "certificates": [
     {
